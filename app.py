@@ -53,9 +53,9 @@ def project_page():
     return render_template("projects.html", projects=projects)
 
 
-@app.route("/skills")
-def skills_page():
-    return render_template("skills.html", skills=skills)
+#@app.route("/skills")
+#def skills_page():
+ #   return render_template("skills.html", skills=skills)
 
 
 @app.route("/contact")
