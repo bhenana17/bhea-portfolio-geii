@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>{{ ac.titre }}</h1>
+
+<hr>
+
+<div class="markdown-content">
+    {{ contenu|safe }}
+</div>
+
+<hr>
+
+<div class="text-center mt-4">
+    <a href="/competences" class="btn btn-finish">
+        Terminer la lecture
+    </a>
+</div>
+
+{% endblock %}

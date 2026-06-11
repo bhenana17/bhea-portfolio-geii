@@ -1,7 +1,107 @@
 body {
-    background-color: #f8f9fa;
+    background-color: #f5f6fa;
 }
 
-h1, h2 {
-    font-weight: bold;
+h1 {
+    font-weight: 700;
+}
+
+.accordion-button {
+    font-weight: 600;
+}
+
+.card, .accordion-item {
+    border-radius: 10px;
+}
+
+/* =========================
+   PAGE COMPETENCE
+========================= */
+
+.competence-box {
+    background-color: white;
+    border-radius: 10px;
+    border-left: 4px solid #212529;
+    transition: 0.2s;
+}
+
+.competence-box h3 {
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #212529;
+}
+
+.competence-box p {
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+/* 🔥 effet quand on passe la souris */
+.competence-box:hover {
+    background-color: #212529;
+    color: white;
+    transform: translateY(-4px);
+}
+
+/* texte devient blanc au hover */
+.competence-box:hover h3,
+.competence-box:hover p,
+.competence-box:hover small {
+    color: white;
+}
+
+h2 {
+    font-weight: 700;
+    color: #333;
+}
+
+.btn-finish {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: #333;
+    font-size: 0.85rem;
+    padding: 6px 14px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+/* hover propre */
+.btn-finish:hover {
+    background-color: #212529;
+    border-color: #999;
+    color: white;
+}
+
+.footer-custom {
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+
+.markdown-content img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3 {
+    margin-top: 25px;
+}
+
+.markdown-content table {
+    width: 100%;
+    margin: 15px 0;
+    border-collapse: collapse;
+}
+
+.markdown-content table,
+.markdown-content th,
+.markdown-content td {
+    border: 1px solid #ccc;
+}
+
+.markdown-content th,
+.markdown-content td {
+    padding: 8px;
 }

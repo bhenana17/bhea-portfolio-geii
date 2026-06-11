@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="mb-5">Compétences GEII</h1>
+
+{% for c in competences %}
+
+    <!-- 🟦 TITRE COMPÉTENCE -->
+    <h2 class="mb-3 mt-4">{{ c.titre }}</h2>
+
+    <div class="row">
+
+        {% for ac in c.ac %}
+
+        <div class="col-md-6 mb-3">
+
+            <a href="/ac/{{ ac.id_ac }}" class="text-decoration-none">
+
+                <div class="competence-box p-3 shadow-sm">
+
+                    <h5>{{ ac.titre }}</h5>
+                    <p>{{ ac.texte }}</p>
+
+                    <small>→ Voir le projet</small>
+
+                </div>
+
+            </a>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+{% endfor %}
+
+{% endblock %}
