@@ -105,3 +105,29 @@ h2 {
 .markdown-content td {
     padding: 8px;
 }
+
+.markdown-content h1 {
+    font-size: 1.6rem;
+    margin-top: 20px;
+}
+
+.markdown-content h2 {
+    font-size: 1.3rem;
+    margin-top: 18px;
+}
+
+.markdown-content h3 {
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+.markdown-content p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.markdown-content {
+    font-size: 1rem;
+    max-width: 900px;
+    margin: auto;
+}
