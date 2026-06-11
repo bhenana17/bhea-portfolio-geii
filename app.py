@@ -71,9 +71,8 @@ def ac_detail(id_ac):
 
     if os.path.exists(file_path):
         with open(file_path, "r", encoding="utf-8") as f:
-            contenu = markdown.markdown(
-                f.read(),
-                extensions=["tables", "fenced_code"]
+            contenu = markdown.markdown(f.read()#,
+               # extensions=["tables", "fenced_code"]
             )
 
     return render_template(
